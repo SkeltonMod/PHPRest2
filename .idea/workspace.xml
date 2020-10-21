@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1izOK5uCmHieeGjZu92hUHMVxrI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="" />
+      <created>1602906886253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602906886253</updated>
+      <workItem from="1602906887279" duration="954000" />
+      <workItem from="1602907889574" duration="1441000" />
+      <workItem from="1602941805583" duration="4302000" />
+      <workItem from="1603012905771" duration="2255000" />
+      <workItem from="1603081579789" duration="1547000" />
+      <workItem from="1603094192875" duration="28000" />
+      <workItem from="1603108627005" duration="4647000" />
+      <workItem from="1603166619311" duration="1459000" />
+      <workItem from="1603179765450" duration="5000" />
+      <workItem from="1603179793776" duration="3007000" />
+      <workItem from="1603249968263" duration="4584000" />
+      <workItem from="1603284582580" duration="3580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1603286128417">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.738@0.0.1366.768" timestamp="1603113783704" />
+    <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603286128417" />
+    <state x="513" y="95" key="NewPhpClassDialog" timestamp="1602943449523">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="513" y="95" key="NewPhpClassDialog/0.0.1366.768/1366.0.1366.738@0.0.1366.768" timestamp="1602943449523" />
+    <state x="1879" y="91" key="NewPhpClassDialog/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1602906892132" />
+    <state x="517" y="304" key="NewPhpFileDialog" timestamp="1603112065145">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="517" y="304" key="NewPhpFileDialog/0.0.1366.768/1366.0.1366.738@0.0.1366.768" timestamp="1603112065145" />
+    <state x="1883" y="292" key="NewPhpFileDialog/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1602906961307" />
+    <state x="1550" y="13" key="SettingsEditor" timestamp="1603181985367">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1550" y="13" key="SettingsEditor/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603181985367" />
+  </component>
+</project>
