@@ -15,8 +15,8 @@ if(isset($key)){
             $time = $_POST['time'];
             $barangay = $_POST['barangay'];
             $station = "Foobar";
-            $image = "Foobar";
-
+            $dbhelper->setImageBin($_FILES['image']['name']);
+            $image = $dbhelper->getImage($dbhelper->getImageBin(),$userid."_".$type."_".$date);
             $dbhelper->setFields("userid","type","latitude","longitude","date","time","barangay","station","image");
             $dbhelper->pushDB("incident",$userid,$type,$lat,$lng,$date,$time,$barangay,$station,$image);
             $response[] = array(
@@ -30,7 +30,6 @@ if(isset($key)){
         break;
         case "getIncidents":
             $response = $dbhelper->getCurrentData("incident",intval($_SESSION['user_id']),"userid","*");
-
             echo json_encode($response);
             break;
     }

@@ -133,16 +133,16 @@ class dbhelper
         }
         return $row;
     }
-    function editData($tablename,$id,...$column){
+    function editData($tablename,$id,$selector,...$column){
         $builder = array();
         for($i = 0; $i != count($column);++$i){
             $builder[] = $this->fields[$i].'= '."'".$column[$i]."'";
         }
-        $sql = "UPDATE ".$tablename." SET ".implode(', ',$builder)." WHERE id=".$id;
+        $sql = "UPDATE ".$tablename." SET ".implode(', ',$builder)." WHERE ".$selector."=".$id;
         if( $this->conn->query($sql) === TRUE){
-            echo "Record updated";
+            return true;
         }else{
-            $this->conn->error;
+            return false;
         }
     }
     function deleteData($tablename,$id){

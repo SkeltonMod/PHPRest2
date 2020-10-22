@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="" />
+    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_INCIDENT.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_INCIDENT.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_LOGIN.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_LOGIN.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbhelper.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,13 +33,18 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1izOK5uCmHieeGjZu92hUHMVxrI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -42,11 +70,26 @@
       <workItem from="1603179793776" duration="3007000" />
       <workItem from="1603249968263" duration="4584000" />
       <workItem from="1603284582580" duration="3580000" />
+      <workItem from="1603288288196" duration="58000" />
+      <workItem from="1603333538682" duration="1126000" />
+      <workItem from="1603357724014" duration="4981000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1603286128417">
@@ -54,6 +97,14 @@
     </state>
     <state x="488" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.738@0.0.1366.768" timestamp="1603113783704" />
     <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603286128417" />
+    <state x="1927" y="266" key="Github.ShareDialog" timestamp="1603288308272">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1927" y="266" key="Github.ShareDialog/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603288308272" />
+    <state x="1896" y="73" key="Github.UntrackedFilesDialog" timestamp="1603288329293">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1896" y="73" key="Github.UntrackedFilesDialog/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603288329293" />
     <state x="513" y="95" key="NewPhpClassDialog" timestamp="1602943449523">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

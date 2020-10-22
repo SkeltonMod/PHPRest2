@@ -111,6 +111,50 @@ if(isset($key)){
             );
             echo json_encode($data);
             break;
+        case "getProfile":
+            $response = $dbhelper->getCurrentData("informants",$_SESSION['user_id'],"userid","*");
+            $data = array(
+                "data" => $response
+            );
+            echo json_encode($data);
+            break;
+        case "editProfile":
+            $fname = $_POST['firstName'];
+            $lname = $_POST['lastName'];
+            $mname = $_POST['middleName'];
+            $suffix = $_POST['suffix'];
+            $email = $_POST['email'];
+            $currentAddress = $_POST['currentAddress'];
+            $primaryAddress = $_POST['primaryAddress'];
+            $phoneNumber = $_POST['phoneNumber'];
+            $occupation = $_POST['occupation'];
+            $workAddress = $_POST['workAddress'];
+            $highestEducation = $_POST['highestEducation'];
+            $citizenship = $_POST['citizenship'];
+            $dbhelper->setImageBin($_FILES['image']['name']);
+            $image = $dbhelper->getImage($dbhelper->getImageBin(),$_SESSION['user_id']);
+            $dbhelper->setFields("firstname","suffix","lastname","middlename","email","citizenship","educ",
+                "mobilenumber","nickname","currentaddress","homeaddress","occupation","workaddress","image");
+           $edit = $dbhelper->editData("informants",$_SESSION['user_id'],"userid",
+                $fname,$suffix,$lname,$mname,$email,$citizenship,$highestEducation,$phoneNumber,$fname,$currentAddress,
+                $primaryAddress,$occupation,$workAddress,$image);
+            if($edit){
+                $response[] = array(
+                    "error"=>false,
+                    "message"=>"User Record updated!!",
+                    "user"=>$_SESSION['user_id']
+                );
+            }else{
+                $response[] = array(
+                    "error"=>true,
+                    "message"=>"Something went wrong",
+                );
+            }
+            $data = array(
+                "data"=>$response
+            );
+            echo json_encode($data);
+            break;
     }
 
 }
