@@ -25,7 +25,7 @@ if(isset($key)){
             $citizenship = $_POST['citizenship'];
             $gender = $_POST['gender'];
             $dbhelper->setImageBin($_FILES['image']['name']);
-            $password = generateString("password");
+            $password = $_POST['password'];
             $userid = generateString("user");
             $image = $dbhelper->getImage($dbhelper->getImageBin(),$userid);
             $dbhelper->setFields("userid","firstname","suffix","lastname","middlename","email","password","citizenship",
@@ -131,8 +131,7 @@ if(isset($key)){
             $workAddress = $_POST['workAddress'];
             $highestEducation = $_POST['highestEducation'];
             $citizenship = $_POST['citizenship'];
-            $dbhelper->setImageBin($_FILES['image']['name']);
-            $image = $dbhelper->getImage($dbhelper->getImageBin(),$_SESSION['user_id']);
+            $image = $dbhelper->getImage((empty($_FILES['image']['name']) ? null : $_FILES['image']['name']),$_SESSION['user_id']);
             $dbhelper->setFields("firstname","suffix","lastname","middlename","email","citizenship","educ",
                 "mobilenumber","nickname","currentaddress","homeaddress","occupation","workaddress","image");
            $edit = $dbhelper->editData("informants",$_SESSION['user_id'],"userid",
