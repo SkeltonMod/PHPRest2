@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="">
+    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="Almost Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_INCIDENT.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_INCIDENT.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_LOGIN.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_LOGIN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbhelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +69,17 @@
       <workItem from="1603284582580" duration="3580000" />
       <workItem from="1603288288196" duration="58000" />
       <workItem from="1603333538682" duration="1126000" />
-      <workItem from="1603357724014" duration="4981000" />
+      <workItem from="1603357724014" duration="5014000" />
+      <workItem from="1603434104389" duration="2064000" />
     </task>
+    <task id="LOCAL-00001" summary="Almost Done">
+      <created>1603364844925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603364844925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +96,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Almost Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1603286128417">
@@ -119,5 +129,9 @@
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
     <state x="1550" y="13" key="SettingsEditor/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603181985367" />
+    <state x="1641" y="101" key="Vcs.Push.Dialog.v2" timestamp="1603364854426">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1641" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603364854426" />
   </component>
 </project>
