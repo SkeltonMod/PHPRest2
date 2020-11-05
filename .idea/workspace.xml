@@ -22,7 +22,6 @@
     <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="bug fix: edit profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_LOGIN.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_LOGIN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbhelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <workItem from="1603673746773" duration="23000" />
       <workItem from="1603947930742" duration="368000" />
       <workItem from="1604058038447" duration="816000" />
-      <workItem from="1604540419780" duration="3857000" />
+      <workItem from="1604540419780" duration="4415000" />
     </task>
     <task id="LOCAL-00001" summary="Almost Done">
       <created>1603364844925</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604540821915</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bug fix: edit profile">
+      <created>1604544513306</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604544513306</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

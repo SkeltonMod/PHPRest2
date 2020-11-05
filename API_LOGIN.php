@@ -131,12 +131,13 @@ if(isset($key)){
             $workAddress = $_POST['workAddress'];
             $highestEducation = $_POST['highestEducation'];
             $citizenship = $_POST['citizenship'];
+            $password = $_POST['password'];
 
             $image = $dbhelper->getImage( isset($_FILES["image"]["name"]) ?  $_FILES["image"]["name"] : null ,$_SESSION['user_id']);
-            $dbhelper->setFields("firstname","suffix","lastname","middlename","email","citizenship","educ",
+            $dbhelper->setFields("firstname","suffix","lastname","middlename","email","password","citizenship","educ",
                 "mobilenumber","nickname","currentaddress","homeaddress","occupation","workaddress","image");
            $edit = $dbhelper->editData("informants",$_SESSION['user_id'],"userid",
-                $fname,$suffix,$lname,$mname,$email,$citizenship,$highestEducation,$phoneNumber,$fname,$currentAddress,
+                $fname,$suffix,$lname,$mname,$email,$password,$citizenship,$highestEducation,$phoneNumber,$fname,$currentAddress,
                 $primaryAddress,$occupation,$workAddress,$image);
             if($edit){
                 $response[] = array(
