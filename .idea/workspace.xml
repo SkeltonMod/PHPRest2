@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="Almost Done">
+    <list default="true" id="2c801148-7b0d-4430-8552-e44464ce454c" name="Default Changelist" comment="bug fix: edit profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_LOGIN.php" beforeDir="false" afterPath="$PROJECT_DIR$/API_LOGIN.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbhelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <workItem from="1603673746773" duration="23000" />
       <workItem from="1603947930742" duration="368000" />
       <workItem from="1604058038447" duration="816000" />
-      <workItem from="1604540419780" duration="258000" />
+      <workItem from="1604540419780" duration="3857000" />
     </task>
     <task id="LOCAL-00001" summary="Almost Done">
       <created>1603364844925</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603449559729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bug fix: edit profile">
+      <created>1604540821915</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604540821915</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Almost Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost Done" />
+    <MESSAGE value="bug fix: edit profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix: edit profile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1447" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1603286128417">
@@ -156,9 +165,10 @@
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
     <state x="1550" y="13" key="SettingsEditor/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603181985367" />
-    <state x="550" y="64" key="Vcs.Push.Dialog.v2" timestamp="1603449564943">
+    <state x="550" y="64" key="Vcs.Push.Dialog.v2" timestamp="1604540826751">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="550" y="64" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.738@0.0.1366.768" timestamp="1604540826751" />
     <state x="550" y="64" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.738@1366.0.1366.738" timestamp="1603449564943" />
   </component>
 </project>

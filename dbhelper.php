@@ -166,12 +166,10 @@ class dbhelper
     imagepng($image,$image_file,4);
     }
     function getImage($image,$filename){
-
         if($image === null){
             $response = $this->getCurrentData("informants",$_SESSION['user_id'],"userid","*");
             return $response[0]['image'];
         }
-
         $imagefiletype = pathinfo($image,PATHINFO_EXTENSION);
         $basename = $filename.".".$imagefiletype;
         $location = "./img/".$basename;

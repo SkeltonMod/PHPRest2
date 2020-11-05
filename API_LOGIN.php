@@ -131,7 +131,8 @@ if(isset($key)){
             $workAddress = $_POST['workAddress'];
             $highestEducation = $_POST['highestEducation'];
             $citizenship = $_POST['citizenship'];
-            $image = $dbhelper->getImage( (is_null($_FILES['image']['name']) ? null : $_FILES['image']['name']) ,$_SESSION['user_id']);
+
+            $image = $dbhelper->getImage( isset($_FILES["image"]["name"]) ?  $_FILES["image"]["name"] : null ,$_SESSION['user_id']);
             $dbhelper->setFields("firstname","suffix","lastname","middlename","email","citizenship","educ",
                 "mobilenumber","nickname","currentaddress","homeaddress","occupation","workaddress","image");
            $edit = $dbhelper->editData("informants",$_SESSION['user_id'],"userid",
