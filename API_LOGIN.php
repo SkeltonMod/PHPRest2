@@ -29,7 +29,7 @@ if(isset($key)){
             $userid = generateString("user");
             $image = $dbhelper->getImage($dbhelper->getImageBin(),$userid);
             $dbhelper->setFields("userid","firstname","suffix","lastname","middlename","email","password","citizenship",
-                "civilstatus","dob","educ","mobilenumber","nickname","pob","currentaddress","homeaddress","occupation","workaddress","image");
+                "civilstatus","dob","educ","gender","mobilenumber","nickname","pob","currentaddress","homeaddress","occupation","workaddress","image");
             if($credentials->checkLogin("informants","email",$email)){
                 $response[] = array(
                     "error"=>true,
@@ -37,7 +37,7 @@ if(isset($key)){
                 );
             }else{
                 $dbhelper->pushDB("informants",$userid,$fname,$suffix,$lname,$mname,$email,$password,$citizenship,$civilStatus,$birthDate
-                    ,$highestEducation,$phoneNumber,$fname,$birthPlace,$currentAddress,$primaryAddress,$occupation,$workAddress,$image);
+                    ,$highestEducation,$gender,$phoneNumber,$fname,$birthPlace,$currentAddress,$primaryAddress,$occupation,$workAddress,$image);
                 $response[] = array(
                     "error"=>false,
                     "message"=>"User Created!",
