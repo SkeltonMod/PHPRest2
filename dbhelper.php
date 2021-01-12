@@ -167,7 +167,7 @@ class dbhelper
     }
     function getImage($image,$filename){
         if($image === null){
-            $response = $this->getCurrentData("informants",$_SESSION['user_id'],"userid","*");
+            $response = $this->getCurrentData("informants",$_POST['userid'],"userid","*");
             return $response[0]['image'];
         }
         $imagefiletype = pathinfo($image,PATHINFO_EXTENSION);

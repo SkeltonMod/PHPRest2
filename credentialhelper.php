@@ -52,7 +52,6 @@ class credentialhelper
     }
     function createSession(){
         $_SESSION['user_id'] = $this->userid;
-
     }
     function checkSession(){
         if(isset($_SESSION['user_id'])){

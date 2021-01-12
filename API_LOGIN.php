@@ -1,6 +1,7 @@
 <?php
 include "dbhelper.php";
 include "credentialhelper.php";
+header("Access-Control-Allow-Origin: *");
 $key = $_POST['key'];
 $dbhelper = new dbhelper("root","db_user","","localhost");
 session_start();
@@ -112,7 +113,7 @@ if(isset($key)){
             echo json_encode($data);
             break;
         case "getProfile":
-            $response = $dbhelper->getCurrentData("informants",$_SESSION['user_id'],"userid","*");
+            $response = $dbhelper->getCurrentData("informants",$_POST['userid'],"userid","*");
             $data = array(
                 "data" => $response
             );
@@ -133,17 +134,17 @@ if(isset($key)){
             $citizenship = $_POST['citizenship'];
             $password = $_POST['password'];
 
-            $image = $dbhelper->getImage( isset($_FILES["image"]["name"]) ?  $_FILES["image"]["name"] : null ,$_SESSION['user_id']);
+            $image = $dbhelper->getImage( isset($_FILES["image"]["name"]) ?  $_FILES["image"]["name"] : null ,$_POST['userid']);
             $dbhelper->setFields("firstname","suffix","lastname","middlename","email","password","citizenship","educ",
                 "mobilenumber","nickname","currentaddress","homeaddress","occupation","workaddress","image");
-           $edit = $dbhelper->editData("informants",$_SESSION['user_id'],"userid",
+           $edit = $dbhelper->editData("informants",$_POST['userid'],"userid",
                 $fname,$suffix,$lname,$mname,$email,$password,$citizenship,$highestEducation,$phoneNumber,$fname,$currentAddress,
                 $primaryAddress,$occupation,$workAddress,$image);
             if($edit){
                 $response[] = array(
                     "error"=>false,
                     "message"=>"User Record updated!!",
-                    "user"=>$_SESSION['user_id']
+                    "user"=>$_POST['userid']
                 );
             }else{
                 $response[] = array(

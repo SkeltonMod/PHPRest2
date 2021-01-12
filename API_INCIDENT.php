@@ -1,13 +1,14 @@
 <?php
 include "dbhelper.php";
 include "credentialhelper.php";
+header("Access-Control-Allow-Origin: *");
 $key = $_POST['key'];
 $dbhelper = new dbhelper("root","db_user","","localhost");
 session_start();
 if(isset($key)){
     switch ($key){
         case "insert":
-            $userid = intval($_SESSION['user_id']);
+            $userid = intval($_POST['userid']);
             $type = $_POST['type'];
             $lat = $_POST['lat'];
             $lng = $_POST['lng'];
@@ -29,7 +30,8 @@ if(isset($key)){
             echo json_encode($data);
         break;
         case "getIncidents":
-            $response = $dbhelper->getCurrentData("incident",intval($_SESSION['user_id']),"userid","*");
+            $userid = $_POST['userid'];
+            $response = $dbhelper->getCurrentData("incident",intval($userid),"userid","*");
             echo json_encode($response);
             break;
     }
