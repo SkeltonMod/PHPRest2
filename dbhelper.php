@@ -49,6 +49,8 @@ class dbhelper
         return $this->image_bin;
     }
 
+
+
     function setFields(...$fields){
         $tmp = array();
         for($i = 0; $i != count($fields); ++$i){
@@ -92,6 +94,9 @@ class dbhelper
             return false;
         }
     }
+
+
+
     function getData($tablename,...$column){
         $column_array = array();
         $row = array();
@@ -121,6 +126,17 @@ class dbhelper
         }
         return $row;
     }
+
+    function stack(...$data){
+        return implode(",",$data);
+    }
+
+
+
+    function mergeSelect($columns,$fields){
+
+    }
+
     function getAllCurrentData($tablename,$id,$selector,...$column){
         $column_array = array();
         $row = array();
@@ -133,6 +149,7 @@ class dbhelper
         }
         return $row;
     }
+
     function editData($tablename,$id,$selector,...$column){
         $builder = array();
         for($i = 0; $i != count($column);++$i){
@@ -165,6 +182,16 @@ class dbhelper
     $image_file = '/img/'.$userid;
     imagepng($image,$image_file,4);
     }
+
+    function generateNumber($length){
+        $temp = str_split("123456789");
+        $salted = "";
+        for($i = 0; $i<= $length; ++$i){
+            $salted .= $temp[rand(0,8)];
+        }
+        return $salted;
+    }
+
     function getImage($image,$filename){
         if($image === null){
             $response = $this->getCurrentData("informants",$_POST['userid'],"userid","*");

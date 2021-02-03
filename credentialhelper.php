@@ -50,6 +50,7 @@ class credentialhelper
         }
         return false;
     }
+
     function createSession(){
         $_SESSION['user_id'] = $this->userid;
     }

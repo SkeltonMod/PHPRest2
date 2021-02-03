@@ -17,9 +17,12 @@ if(isset($key)){
             $barangay = $_POST['barangay'];
             $station = "Foobar";
             $dbhelper->setImageBin($_FILES['image']['name']);
+            $incident_gen = $dbhelper->generateNumber(7);
             $image = $dbhelper->getImage($dbhelper->getImageBin(),$userid."_".$type."_".$date);
-            $dbhelper->setFields("userid","type","latitude","longitude","date","time","barangay","station","image");
+            $dbhelper->setFields("informant_id","type","latitude","longitude","date","time","location","police_station_no","image");
             $dbhelper->pushDB("incident",$userid,$type,$lat,$lng,$date,$time,$barangay,$station,$image);
+            $dbhelper->setFields("incident_no","datetime_acknowledged","status", "informant_report_id");
+            $dbhelper->pushDB("incident_details", $incident_gen, date("Y-m-d h:i:s"), "Pending", $userid);
             $response[] = array(
                 "error"=>false,
                 "message"=>"Incident Reported Successfully",
@@ -31,7 +34,7 @@ if(isset($key)){
         break;
         case "getIncidents":
             $userid = $_POST['userid'];
-            $response = $dbhelper->getCurrentData("incident",intval($userid),"userid","*");
+            $response = $dbhelper->getCurrentData("incident",intval($userid),"informant_id","*");
             echo json_encode($response);
             break;
     }
